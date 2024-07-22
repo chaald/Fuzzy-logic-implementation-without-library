@@ -1,60 +1,56 @@
 # Fuzzy-logic-implementation-without-library
-Fuzzy logic implementation without library to select top 5 machine shop from 100 machine shop
+Implementasi logika fuzzy tanpa library untuk memilih 5 bengkel terbaik dari 100 bengkel.
 
-***Project Description***
+## Deskripsi Proyek
 
-This project is a final assignment for the Artificial Intelligence course. The goal is to develop a Fuzzy Logic Inference system to select the top 5 machine shop from a dataset of 100 machine shop without using any external fuzzy logic libraries. The program reads input from a file named bengkel.xlsx and outputs the best 5 machine shop with information on their service quality, pricing, and a suitability score derived from the defuzzification process.
+Proyek ini adalah tugas akhir untuk mata kuliah Kecerdasan Buatan. Tujuannya adalah mengembangkan sistem Inferensi Logika Fuzzy untuk memilih 5 bengkel terbaik dari dataset yang berisi 100 bengkel tanpa menggunakan library logika fuzzy eksternal. Program membaca input dari file bernama bengkel.xlsx dan mengeluarkan 5 bengkel terbaik dengan informasi tentang kualitas layanan, harga, dan skor kelayakan yang diperoleh dari proses defuzzifikasi.
 
-***Features***
-- Read machine shop data from bengkel.xlsx.
-- Evaluate each machine shop based on service quality and pricing using a custom Fuzzy Logic implementation.
-- Select and display the top 5 machine shop with their IDs, service quality, pricing information, and suitability scores.
+## Fitur
+- Membaca data bengkel dari bengkel.xlsx.
+- Mengevaluasi setiap bengkel berdasarkan kualitas layanan dan harga menggunakan implementasi Logika Fuzzy khusus.
+- Memilih dan menampilkan 5 bengkel terbaik dengan ID mereka, kualitas layanan, informasi harga, dan skor kelayakan.
 
-***Table of Contents***
-- Installation
-- Usage
-- Input Data Format
-- Fuzzy Logic System
-  - Fuzzification
-  - Inference
-  - Defuzzification
+## Daftar Isi
+- Instalasi
+- Penggunaan
+- Format Data Input
+- Sistem Logika Fuzzy
+  - Fuzzifikasi
+  - Inferensi
+  - Defuzzifikasi
 - Output
 
-***Installation***
-1. Clone the repository:
+## Instalasi
+- Clone repository:
 git clone https://github.com/chaald/fuzzy-logic-implementation-without-library.git
-2. Navigate to the project directory:
+- Masuk ke direktori proyek:
 cd fuzzy-logic-implementation-without-library
-3. Install the required dependencies:
+- Install dependencies yang diperlukan:
 pip install -r requirements.txt
 
-***Usage***
-1. Place your bengkel.xlsx file in the project directory.
-2. Run the main program:
+## Penggunaan
+- Letakkan file bengkel.xlsx di direktori proyek.
+- Jalankan program utama:
 python main.py
-3. The program will output the top 5 machine shop with their IDs, service quality, pricing, and suitability scores.
+- Program akan menampilkan 5 bengkel terbaik dengan ID mereka, kualitas layanan, harga, dan skor kelayakan.
 
-***Input Data Format***
+## Format Data Input
 
-The bengkel.xlsx file should have the following columns:
-- id: The unique identifier for each machine shop.
-- servis: The quality of service provided by the machine shop.
-- harga: The cost of services offered by the machine shop.
+File bengkel.xlsx harus memiliki kolom-kolom berikut:
+- id: Identifikasi unik untuk setiap bengkel.
+- servis: Kualitas layanan yang diberikan oleh bengkel.
+- harga: Biaya layanan yang ditawarkan oleh bengkel.
 
-***Fuzzy Logic System***
-1. Fuzzification
-Fuzzification is the process of converting crisp input values into fuzzy sets. This project defines fuzzy membership functions for service quality and pricing.
-2. Inference
-Inference uses predefined fuzzy rules to evaluate the input values. The fuzzy rules are stored in a dictionary and the inference process calculates the degree of membership for each rule.
-3. Defuzzification
-Defuzzification converts the fuzzy output into a crisp suitability score. This project uses the centroid method to calculate the final suitability score.
+## Sistem Logika Fuzzy
+1. Fuzzifikasi: Fuzzifikasi adalah proses mengubah nilai input crisp menjadi himpunan fuzzy. Proyek ini mendefinisikan fungsi keanggotaan fuzzy untuk kualitas layanan dan harga.
+2. Inferensi: Inferensi menggunakan aturan fuzzy yang telah ditentukan untuk mengevaluasi nilai input. Aturan fuzzy disimpan dalam sebuah dictionary dan proses inferensi menghitung derajat keanggotaan untuk setiap aturan.
+3. Defuzzifikasi: Defuzzifikasi mengubah output fuzzy menjadi skor kelayakan crisp. Proyek ini menggunakan metode centroid untuk menghitung skor kelayakan akhir.
 
-***Output***
+## Output
 
-The program displays the top 5 machine shop with the following information:
-- id: machine shop ID.
-- servis: Quality of service provided.
-- harga: Cost of services offered.
-- skor kelayakan: The defuzzified score representing the suitability of the machine shop.
-The final ranked list of machine shop is saved to peringkat.xls.
-
+Program menampilkan 5 bengkel terbaik dengan informasi berikut:
+- id: ID bengkel.
+- servis: Kualitas layanan yang diberikan.
+- harga: Biaya layanan yang ditawarkan.
+- skor kelayakan: Skor defuzzifikasi yang mewakili kelayakan bengkel.
+Daftar peringkat akhir bengkel disimpan dalam peringkat.xls.
